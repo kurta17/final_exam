@@ -21,12 +21,8 @@ def func(number):
         new_list.append(m)
     print(new_list)
     sum_digit = sum(new_list)
-    digit = sum_digit % 10
-    checksum = 10 - digit
-    if checksum == 10:
-        print("0")
-    else:
-        print(checksum)
+    checksum = (10 - sum_digit % 10) % 10
+    return checksum
 
 
 
